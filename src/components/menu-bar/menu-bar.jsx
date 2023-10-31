@@ -808,58 +808,58 @@ class MenuBar extends React.Component {
                             src={screenshotIcon}
                         />
                     </div>
-                    <Divider className={classNames(styles.divider)} />
-                    <div
-                        className={classNames(styles.menuBarItem, this.props.isRealtimeMode &&
-                            this.props.peripheralName ? styles.hoverable : styles.disabled)}
-                        onMouseUp={this.props.isRealtimeMode && this.props.peripheralName ?
-                            this.handleUploadFirmware : null}
-                    >
-                        <img
-                            alt="UploadFirmware"
-                            className={classNames(styles.uploadFirmwareLogo)}
-                            draggable={false}
-                            src={uploadFirmwareIcon}
-                        />
-                        <FormattedMessage
-                            defaultMessage="Upload firmware"
-                            description="Button to upload the realtime firmware"
-                            id="gui.menuBar.uploadFirmware"
-                        />
-                    </div>
-                    <Divider className={classNames(styles.divider)} />
-                    <div className={classNames(styles.menuBarItem, styles.programModeGroup)}>
-                        <Switch
-                            className={styles.programModeSwitch}
-                            onChange={this.handleProgramModeSwitchOnChange}
-                            checked={!this.props.isRealtimeMode}
-                            disabled={this.props.isToolboxUpdating || !this.props.isSupportSwitchMode}
-                            height={25}
-                            width={90}
-                            onColor={this.props.isToolboxUpdating ||
-                                !this.props.isSupportSwitchMode ? '#888888' : '#008800'}
-                            offColor={this.props.isToolboxUpdating ||
-                                !this.props.isSupportSwitchMode ? '#888888' : '#FF8C1A'}
-                            uncheckedIcon={
-                                <div className={styles.modeSwitchRealtime}>
-                                    <FormattedMessage
-                                        defaultMessage="Realtime"
-                                        description="Button to switch to upload mode"
-                                        id="gui.menu-bar.modeSwitchRealtime"
-                                    />
-                                </div>
-                            }
-                            checkedIcon={
-                                <div className={styles.modeSwitchUpload}>
-                                    <FormattedMessage
-                                        defaultMessage="Upload"
-                                        description="Button to switch to realtime mode"
-                                        id="gui.menu-bar.modeSwitchRealtimeUpload"
-                                    />
-                                </div>
-                            }
-                        />
-                    </div>
+                    {/*<Divider className={classNames(styles.divider)} />*/}
+                    {/*<div*/}
+                    {/*    className={classNames(styles.menuBarItem, this.props.isRealtimeMode &&*/}
+                    {/*        this.props.peripheralName ? styles.hoverable : styles.disabled)}*/}
+                    {/*    onMouseUp={this.props.isRealtimeMode && this.props.peripheralName ?*/}
+                    {/*        this.handleUploadFirmware : null}*/}
+                    {/*>*/}
+                    {/*    <img*/}
+                    {/*        alt="UploadFirmware"*/}
+                    {/*        className={classNames(styles.uploadFirmwareLogo)}*/}
+                    {/*        draggable={false}*/}
+                    {/*        src={uploadFirmwareIcon}*/}
+                    {/*    />*/}
+                    {/*    <FormattedMessage*/}
+                    {/*        defaultMessage="Upload firmware"*/}
+                    {/*        description="Button to upload the realtime firmware"*/}
+                    {/*        id="gui.menuBar.uploadFirmware"*/}
+                    {/*    />*/}
+                    {/*</div>*/}
+                    {/*<Divider className={classNames(styles.divider)} />*/}
+                    {/*<div className={classNames(styles.menuBarItem, styles.programModeGroup)}>*/}
+                    {/*    <Switch*/}
+                    {/*        className={styles.programModeSwitch}*/}
+                    {/*        onChange={this.handleProgramModeSwitchOnChange}*/}
+                    {/*        checked={!this.props.isRealtimeMode}*/}
+                    {/*        disabled={this.props.isToolboxUpdating || !this.props.isSupportSwitchMode}*/}
+                    {/*        height={25}*/}
+                    {/*        width={90}*/}
+                    {/*        onColor={this.props.isToolboxUpdating ||*/}
+                    {/*            !this.props.isSupportSwitchMode ? '#888888' : '#008800'}*/}
+                    {/*        offColor={this.props.isToolboxUpdating ||*/}
+                    {/*            !this.props.isSupportSwitchMode ? '#888888' : '#FF8C1A'}*/}
+                    {/*        uncheckedIcon={*/}
+                    {/*            <div className={styles.modeSwitchRealtime}>*/}
+                    {/*                <FormattedMessage*/}
+                    {/*                    defaultMessage="Realtime"*/}
+                    {/*                    description="Button to switch to upload mode"*/}
+                    {/*                    id="gui.menu-bar.modeSwitchRealtime"*/}
+                    {/*                />*/}
+                    {/*            </div>*/}
+                    {/*        }*/}
+                    {/*        checkedIcon={*/}
+                    {/*            <div className={styles.modeSwitchUpload}>*/}
+                    {/*                <FormattedMessage*/}
+                    {/*                    defaultMessage="Upload"*/}
+                    {/*                    description="Button to switch to realtime mode"*/}
+                    {/*                    id="gui.menu-bar.modeSwitchRealtimeUpload"*/}
+                    {/*                />*/}
+                    {/*            </div>*/}
+                    {/*        }*/}
+                    {/*    />*/}
+                    {/*</div>*/}
                     {isScratchDesktop() ? (
                         <div
                             className={classNames(styles.menuBarItem, styles.hoverable, {

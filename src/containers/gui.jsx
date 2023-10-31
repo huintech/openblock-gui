@@ -60,10 +60,12 @@ class GUI extends React.Component {
         }
     }
     render () {
-        if (this.props.isError) {
-            throw new Error(
-                `Error in Scratch GUI [location=${window.location}]: ${this.props.error}`);
-        }
+        // console.log(JSON.stringify(this.props));
+        // TODO: cause error
+        // if (this.props.isError) {
+        //     throw new Error(
+        //         `Error in Scratch GUI [location=${window.location}]: ${this.props.error}`);
+        // }
         const {
             /* eslint-disable no-unused-vars */
             assetHost,
